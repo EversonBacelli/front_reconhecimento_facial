@@ -47,7 +47,6 @@ Este projeto oferece uma interface amigável que permite capturar o feed da câm
 1. Captura e Avaliação da Imagem:
 - O usuário realiza a captura da imagem e o sistema realiza a avaliação da imagem via API, apresentando um status em termos de Brilho, Contraste, Foco e Presença de Face. Informações essas inclusas diretamente na barra lateral o container principal.
 
-<img src="https://githubusercontent.com" width="18" height="18" />
 Fluxo de Excessão: Caso a imagem não atenda aos critérios mínimos, o usuário é notificado imediatamente para realizar uma nova captura com o botão reiniciar.
 
 2. Correção Manual:
@@ -64,7 +63,7 @@ Falha: Apresenta uma mensagem clara de erro com o botão "Tentar Novamente", red
 
 🔗 Endpoints Consumidos
 A aplicação comunica-se com a API Backend Flask através dos seguintes serviços:
-** SERVER - localhost:127.0.0.1 **
+** SERVER - localhost:127.0.0.1 ** <br>
 Rota: /qualityImage
 - Método POST
 - Descrição: Recebe uma imagem no formato base64, o converte em tons de cinza e realizada uma avaliação quanto de brilho, constraste, foco e presença de fase
