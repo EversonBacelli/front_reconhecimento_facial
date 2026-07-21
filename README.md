@@ -88,6 +88,7 @@ Manipulação de Mídia: MediaDevices API (getUserMedia)
 Comunicação HTTP: Fetch API 
 Formato de Transmissão: JSON & Base64
 <br>
+<br>
 👤 Autor: EversonBacelli <br>
 📧 Contato: everson.wilian29@gmail.com <br>
 🐙 GitHub: @EversonBacelli
