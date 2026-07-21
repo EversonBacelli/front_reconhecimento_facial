@@ -56,7 +56,7 @@ Ao requisitar uma correção, a nova imagem com as alterações serão apresenta
 3. Consulta e Validação na Base
 A imagem processada é enviada para comparação com aquelas presentes  na base de dados.
 
-Sucesso: Os dados cadastrais/correspondentes são exibidos na tela.
+Sucesso: Os dados cadastrais/correspondentes são exibidos na tela. <br>
 Falha: Apresenta uma mensagem clara de erro com o botão "Tentar Novamente", redirecionando o usuário de volta para a câmara.
 
 
