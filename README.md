@@ -43,7 +43,7 @@ Este projeto oferece uma interface amigável que permite capturar o feed da câm
 
 ---
 
-📋 ## Detalhamento das Etapas
+## 📋 Detalhamento das Etapas
 1. Captura e Avaliação da Imagem:
 - O usuário realiza a captura da imagem e o sistema realiza a avaliação da imagem via API, apresentando um status em termos de Brilho, Contraste, Foco e Presença de Face. Informações essas inclusas diretamente na barra lateral o container principal.
 
@@ -61,7 +61,7 @@ Falha: Apresenta uma mensagem clara de erro com o botão "Tentar Novamente", red
 
 
 
-🔗 ## Endpoints Consumidos
+## 🔗 Endpoints Consumidos
 A aplicação comunica-se com a API Backend Flask através dos seguintes serviços: <br>
 ** SERVER - localhost:127.0.0.1 ** <br>
 Rota: /qualityImage
@@ -82,7 +82,7 @@ Descrição: Compara o vetor facial (embedding) e retorna os dados do aluno cada
 <br>
 
 
-🛠️ ## Tecnologias Utilizadas
+## 🛠️ Tecnologias Utilizadas
 Front-End: HTML5, CSS3, JavaScript (ES6+)
 Manipulação de Mídia: MediaDevices API (getUserMedia)
 Comunicação HTTP: Fetch API 
