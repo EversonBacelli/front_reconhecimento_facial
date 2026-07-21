@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/card.css">
+    <link rel="stylesheet" href="./css/status.css">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    
+    <div class="container">
+
+
+        <div id="div_status">
+            <div>
+                <input type="radio" id="status" name="brilho" value="nk" >
+                <label>BRILHO</label>
+                <img src="https://img.icons8.com/ios/50/brightness-settings.png" alt="brightness-settings"/>     
+            </div>
+            <div>
+                <input type="radio" id="status" name="contraste" value="nk">
+                <label >CONTRASTE</label>
+                <img src="https://img.icons8.com/ios-filled/50/contrast.png" alt="contrast"/>
+            </div>
+            <div>
+                <input type="radio" id="status" name="foco" value="nk">
+                <label >FOCO</label>
+                <img src="https://img.icons8.com/ios/50/camera-automation.png" alt="camera-automation"/>
+            </div>
+            <div>
+                <input type="radio" id="status" name="face" value="nk">
+                <label>FACE</label>
+                <img width="50" height="50" src="https://img.icons8.com/ios/50/face.png" alt="face"/>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <div class="captura">
+                <video id="video" autoplay playsinline width="100%" height="100%"></video>
+                <canvas id="canvas" dislay="None"></canvas>
+                <div class="antes_depois">
+                     <img class="antes" src="./img/img1.jpeg" alt="" >
+                     <img class="depois"  src="./img/img2.jpeg" alt="">
+                </div>
+            </div>
+            <div id="melhorar_img" >
+                <button type="button" id="brilho" class="btn btn-primary">MELHORAR BRILHO</button>
+                <button type="button" id="rotacao"  class="btn btn-success">MELHORAR ROTAÇÃO</button>
+            </div>
+
+
+            <hr>
+            <div class="dados">
+                <div class="card-body">
+                    <div class="infos">
+                        <div class="dados_pessoais">
+                            <h5 class="card-title">DADOS PESSOAIS</h5>
+                            <div class="identificacao"> 
+                                <span> MATRICULA:<label for=""></label></span> 
+                                <span>NOME: <label for=""></label></span>
+                            </div>
+                            <div class="curso">
+                                <span> CURSO: <label> </label></span>  
+                                <span> TURMA: <label> </label></span>  
+                                <span> TURNO: <label> </label></span> 
+                            </div>
+                        </div>
+                        <div class="match">
+                            <p>Match </p>
+                            
+                        </div>
+                    </div>
+                    <hr>
+            
+                    
+                    <br>
+                    <div class="imagem_camera">
+                        <div class="img_camera">
+                            <img id="capture-btn" src="https://img.icons8.com/dotty/80/camera.png" alt="camera"/>
+                            <p>Capturar</p>
+                        </div>
+                        <div class="btn_reiniciar">
+                            <img id="reiniciar" width="50" height="50" src="https://img.icons8.com/ios-filled/50/restart--v1.png" alt="restart--v1"/>
+                            <p>CAPTURAR</p>
+                        </div>
+                        <div class="img_salvar">       
+                            <img id="disk" src="https://img.icons8.com/external-tal-revivo-green-tal-revivo/36/external-verified-check-circle-for-approved-valid-content-basic-green-tal-revivo.png" alt="external-verified-check-circle-for-approved-valid-content-basic-green-tal-revivo"/>
+                            <p>VALIDAR</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+           </div>
+    
+        </div>
+    </div>
+</div>
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./js/script.js" type="module"></script>
+</body>
+</html>

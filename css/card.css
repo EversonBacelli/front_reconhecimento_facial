@@ -1,0 +1,86 @@
+.card{
+    width: 100% !important;
+    border: black 5px solid;
+    border-radius: 20px;
+}
+
+.card-body{
+    width: 100%;
+}
+.captura{
+    height: 450px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.identificacao, .curso{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.identificacao label, .curso label{
+    width: 200px;
+    margin-left: 40px;
+}
+
+#video{
+    width: 100%; 
+    height: 100%;
+    z-index: 2;
+}
+
+.imagem_camera{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 95%;
+}
+
+.imagem_camera img{
+    width: 120px;
+    height: 120px;
+}
+
+.img_camera, .img_salvar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+canvas {
+    margin-bottom: 10px;
+    background-color: #ccc;
+    display: None;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+
+
+.btn_reiniciar{
+    display: flex;
+    justify-content: center;
+    display: None;
+}
+
+.infos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.dados_pessoais{
+    margin-left: 10px;
+}
+
+.match{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 5px;
+}
