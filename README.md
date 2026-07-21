@@ -43,20 +43,25 @@ Este projeto oferece uma interface amigável que permite capturar o feed da câm
 
 ---
 
-## 🔄 Fluxo de Funcionamento
+📋 Detalhamento das Etapas
+1. Captura e Validação de Dimensões
+O usuário realiza a captura da imagem.
 
-```text
-[ Feed da Câmera ]
-        │
-        ▼
-   [ CAPTURAR ] ──► Congela a imagem e gera o Base64
-        │
-        ├──► [ MELHORAR BRILHO ]  ──► Chama /atualizarBrilho  ──► Atualiza Preview & LED Brilho
-        ├──► [ MELHORAR ROTAÇÃO ] ──► Chama /corrigirRotacao  ──► Atualiza Preview & LED Face
-        │
-        ▼
-   [ VALIDAR ]  ──► 1. /qualityImage ──► Atualiza LEDs laterais (Brilho, Contraste, Foco, Face)
-                ──► 2. /comparar     ──► Preenche os DADOS PESSOAIS + Porcentagem de MATCH
+O sistema valida instantaneamente as dimensões e métricas de qualidade.
+
+Caso a imagem não atenda aos critérios mínimos, o usuário é notificado imediatamente para realizar uma nova captura.
+
+2. Processamento Automático (Background)
+Sem Intervenção Manual: Elimina a tela de comparação lado a lado e os botões manuais de ajuste de brilho/rotação.
+
+Auto-Aprimoramento: O algoritmo ajusta a orientação (rotação) e melhora o brilho/contraste automaticamente na versão capturada de forma transparente antes do envio.
+
+3. Consulta e Validação na Base
+A imagem processada é enviada para validação contra a base de dados.
+
+Sucesso: Os dados cadastrais/correspondentes são exibidos na tela.
+
+Falha: Apresenta uma mensagem clara de erro com o botão "Tentar Novamente", redirecionando o usuário de volta para a câmara.
 
 
 
