@@ -17,7 +17,7 @@ Interface Web Interativa desenvolvida para captura de imagem via webcam, tratame
 ---
 
 ## 📖 Visão Geral
-A interface foi idealizada 2 partes essenciais, barra lateral cujo objetivo e indicar aspectos importantes sobre a imagem capturada e uma painel principal que visa apresentar e gerenciar os principais recursos da solução - captura da imagem, reiniciar o sistema, gerenciar as transformações e realizar o reconhecimento facial. 
+A interface foi idealizada 2 partes essenciais: barra lateral cujo objetivo e indicar aspectos importantes sobre a imagem capturada e um painel principal que visa apresentar e gerenciar os principais recursos da solução - captura da imagem, reiniciar o sistema, gerenciar as transformações e realizar o reconhecimento facial. 
 
 
 ---
