@@ -79,7 +79,7 @@ Rota: /corrigirRotacao
 Rota: /comparar
 - Método: POST
 Descrição: Compara o vetor facial (embedding) e retorna os dados do aluno cadastrado ou mensagem de erro.
-
+<br>
 
 
 🛠️ Tecnologias Utilizadas
@@ -87,7 +87,7 @@ Front-End: HTML5, CSS3, JavaScript (ES6+)
 Manipulação de Mídia: MediaDevices API (getUserMedia)
 Comunicação HTTP: Fetch API 
 Formato de Transmissão: JSON & Base64
-
-👤 Autor: EversonBacelli 
-📧 Contato: everson.wilian29@gmail.com
+<br>
+👤 Autor: EversonBacelli <br>
+📧 Contato: everson.wilian29@gmail.com <br>
 🐙 GitHub: @EversonBacelli
