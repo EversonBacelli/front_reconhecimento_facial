@@ -44,44 +44,42 @@ Este projeto oferece uma interface amigável que permite capturar o feed da câm
 ---
 
 📋 Detalhamento das Etapas
-1. Captura e Validação de Dimensões
-O usuário realiza a captura da imagem.
+1. Captura e Avaliação da Imagem:
+- O usuário realiza a captura da imagem e o sistema realiza a avaliação da imagem via API, apresentando um status em termos de Brilho, Contraste, Foco e Presença de Face. Informações essas inclusas diretamente na barra lateral o container principal.
 
-O sistema valida instantaneamente as dimensões e métricas de qualidade.
+<img src="https://githubusercontent.com" width="18" height="18" />
+Fluxo de Excessão: Caso a imagem não atenda aos critérios mínimos, o usuário é notificado imediatamente para realizar uma nova captura com o botão reiniciar.
 
-Caso a imagem não atenda aos critérios mínimos, o usuário é notificado imediatamente para realizar uma nova captura.
-
-2. Processamento Automático (Background)
-Sem Intervenção Manual: Elimina a tela de comparação lado a lado e os botões manuais de ajuste de brilho/rotação.
-
-Auto-Aprimoramento: O algoritmo ajusta a orientação (rotação) e melhora o brilho/contraste automaticamente na versão capturada de forma transparente antes do envio.
+2. Correção Manual:
+A partir da imagem capturada e da avaliação, o usuário pode requisitar correções de brilho e/ou rotação que será realiza via API.
+Ao requisitar uma correção, a nova imagem com as alterações serão apresentada junto com a versão anterior e o usuário clicando poderá selecionar aquela que continuará no sistema para validação
 
 3. Consulta e Validação na Base
-A imagem processada é enviada para validação contra a base de dados.
+A imagem processada é enviada para comparação com aquelas presentes  na base de dados.
 
 Sucesso: Os dados cadastrais/correspondentes são exibidos na tela.
-
 Falha: Apresenta uma mensagem clara de erro com o botão "Tentar Novamente", redirecionando o usuário de volta para a câmara.
 
 
 
 🔗 Endpoints Consumidos
 A aplicação comunica-se com a API Backend Flask através dos seguintes serviços:
-Rota
-Método
-Descrição
-/qualityImage
-POST
-Analisa foco, brilho e enquadramento da imagem.
-/atualizarBrilho
-POST
-Processa e melhora a iluminação da foto enviada.
-/corrigirRotacao
-POST
-Alinha o rosto detectado com base na posição dos olhos.
-/comparar
-POST
-Compara o vetor facial (embedding) e retorna os dados do aluno cadastrado.
+** SERVER - localhost:127.0.0.1 **
+Rota: /qualityImage
+- Método POST
+- Descrição: Recebe uma imagem no formato base64, o converte em tons de cinza e realizada uma avaliação quanto de brilho, constraste, foco e presença de fase
+
+Rota:  /atualizarBrilho
+- Método: POST
+- Descrição: Processa e melhora a iluminação da foto enviada.
+
+Rota: /corrigirRotacao
+- Método: POST
+- Descrição: Alinha o rosto detectado com base na posição dos olhos.
+
+Rota: /comparar
+- Método: POST
+Descrição: Compara o vetor facial (embedding) e retorna os dados do aluno cadastrado ou mensagem de erro.
 
 
 
