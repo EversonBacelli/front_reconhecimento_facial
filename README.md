@@ -62,7 +62,7 @@ Falha: Apresenta uma mensagem clara de erro com o botão "Tentar Novamente", red
 
 
 🔗 Endpoints Consumidos
-A aplicação comunica-se com a API Backend Flask através dos seguintes serviços:
+A aplicação comunica-se com a API Backend Flask através dos seguintes serviços: <br>
 ** SERVER - localhost:127.0.0.1 ** <br>
 Rota: /qualityImage
 - Método POST
