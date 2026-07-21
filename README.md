@@ -1,6 +1,6 @@
 # 📸 Front-End — Reconhecimento Facial
 
-Interface web interativa desenvolvida para captura de imagem via webcam, tratamento de iluminação e alinhamento em tempo real, validação de qualidade e identificação de alunos integrada à [API Service Reconhecimento Facial](https://github.com/EversonBacelli/service_reconhecimento_facial).
+Interface Web Interativa desenvolvida para captura de imagem via webcam, tratamento de iluminação e alinhamento em tempo real, validação de qualidade e identificação de alunos integrada à [API Service Reconhecimento Facial](https://github.com/EversonBacelli/service_reconhecimento_facial). Desenvolvida no contexto da matéria de Processamento de Imagem e Visão Computacional no Curso de Mestrado em Ciência da Computação na Universidade Federal do ABC (UFABC).
 
 ---
 
